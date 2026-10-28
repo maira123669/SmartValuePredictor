@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F3F6FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Premium blue header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/bg_header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STUDYSCORE AI"
+                android:textColor="#C9DCFF"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:letterSpacing="0.12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your effort.\\nYour potential."
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explore an estimated score using your on-device AI model."
+                android:textColor="#E0EAFF"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✦  TENSORFLOW LITE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:padding="10dp"
+                android:layout_marginTop="18dp"
+                android:background="#354C83" />
+        </LinearLayout>
+
+        <!-- Prediction form card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_card"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01  /  MAKE A PREDICTION"
+                android:textColor="#5274B9"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How long did you study?"
+                android:textColor="#172B4D"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter a value between 1 and 10 hours."
+                android:textColor="#6D7890"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="14dp" />
+
+            <EditText
+                android:id="@+id/hoursInput"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:hint="e.g. 5"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="17sp"
+                android:textColor="#172B4D"
+                android:textColorHint="#8A94A6"
+                android:background="@drawable/bg_input" />
+
+            <Button
+                android:id="@+id/predictButton"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="Predict My Score  →"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_button"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your input is processed by the model on this device."
+                android:textColor="#718096"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="14dp" />
+        </LinearLayout>
+
+        <!-- Prediction result card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02  /  YOUR AI RESULT"
+                android:textColor="#5274B9"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your predicted score will appear here."
+                android:textColor="#172B4D"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="20dp"
+                android:layout_marginTop="12dp"
+                android:background="#EDF3FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MODEL INFORMATION"
+                android:textColor="#5274B9"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This demonstration uses a model trained on artificial example data. Its output is an estimate, not a reliable prediction of real exam performance."
+                android:textColor="#6D7890"
+                android:textSize="13sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STUDYSCORE AI  •  LEARN SMARTER"
+            android:textColor="#8290A8"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="22dp" />
+
+    </LinearLayout>
+</ScrollView>

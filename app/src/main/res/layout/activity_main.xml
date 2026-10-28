@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F3F6FC">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- App branding -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✦"
+            android:textSize="42sp"
+            android:textColor="#3868C8"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StudyScore AI"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#172D59"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMART LEARNING. SMARTER INSIGHTS."
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#6480B6"
+            android:letterSpacing="0.12"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Login card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/bg_card"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome back"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#172D59" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in to explore your AI-powered score prediction."
+                android:textSize="14sp"
+                android:textColor="#718096"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Email input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMAIL ADDRESS"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#344A70"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="student@example.com"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="15sp"
+                android:textColor="#172D59"
+                android:background="@drawable/bg_input"
+                android:autofillHints="emailAddress" />
+
+            <!-- Password input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#344A70"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="15sp"
+                android:textColor="#172D59"
+                android:background="@drawable/bg_input"
+                android:autofillHints="password" />
+
+            <!-- Login button -->
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="Sign In  →"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_button"
+                android:layout_marginTop="28dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your AI journey starts here."
+                android:textSize="12sp"
+                android:textColor="#718096"
+                android:gravity="center"
+                android:layout_marginTop="18dp" />
+
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POWERED BY ON-DEVICE TENSORFLOW LITE"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#8290A8"
+            android:gravity="center"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
